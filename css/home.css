@@ -1,0 +1,155 @@
+swiper-container {
+  width: 250px;
+  height: 250px;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #656565;
+  width: 40px;
+  height: 100%;
+}
+
+swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#card {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #656565;
+  border-radius: 4px;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#content > h3 {
+  font-size: 1.2em;
+}
+
+#content > p {
+  line-height: 1.2em;
+}
+
+p > a {
+  font-weight: 700;
+  color: #ddd;
+}
+
+.border-animated {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.border-animated {
+  margin: 0 auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.border-animated::before,
+.border-animated::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: linear-gradient(
+    to top right,
+    #5c01f9,
+    #6912ff,
+    #7d32ff,
+    #9152fd,
+    #ac7cff
+  );
+  background-size: 200%;
+  border-radius: 4px;
+  animation: borderAnimated 10s alternate-reverse infinite;
+}
+
+.border-animated::after {
+  filter: blur(10px);
+}
+
+@keyframes borderAnimated {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #card {
+    width: 90%;
+  }
+
+  #content > h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #card {
+    width: 90%;
+  }
+
+  #content {
+    width: 55%;
+    padding: 15px;
+  }
+
+  #content > h3 {
+    font-size: 1.6em;
+    text-shadow: 1px 1px #7243c2;
+  }
+
+  #content > p {
+    font-size: 1.2em;
+  }
+}

@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Universo Figure Action - Página Home com uma breve descrição"
+      content="Universo Figure Action - Página de contato"
     />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"
-    ></script>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
     <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <title>Universo Figure Action - Home</title>
+    <title>Universo Figure Action - Contato</title>
   </head>
   <body>
     <header>
       <ul id="menu">
         <li class="menu-item">
-          <a id="selected" href="/">
+          <a href="/">
             <svg
               class="menu-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +31,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="./pages/galeria.html">
+          <a href="/pages/galeria.html">
             <svg
               class="menu-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +44,8 @@
             Galeria
           </a>
         </li>
-        <li class="menu-item">
-          <a href="./pages/contato.html">
+        <li id="selected" class="menu-item">
+          <a href="/pages/contato.html">
             <svg
               class="menu-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +59,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="./pages/sobre.html">
+          <a href="/pages/sobre.html">
             <svg
               class="menu-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,73 +74,53 @@
         </li>
       </ul>
     </header>
+
     <section id="container">
       <div id="title-container">
         <figure>
           <img src="/images/logo.webp" alt="" />
         </figure>
-        <h1>Universo Figure Action</h1>
+        <h1>Universo Figure Action - Contato</h1>
       </div>
 
-      <div id="card">
-        <div class="border-animated">
-          <swiper-container
-            class="swiper-container"
-            effect="flip"
-            slidesperview="4"
-            pagination="true"
-            pagination-clickable="true"
-            autoplay-delay="3000"
-            autoplay-disable-on-interaction="false"
-            space-between="30"
-            centered-slides="true"
-          >
-            <swiper-slide>
-              <img
-                src="/images/chain_swan_man.jpg"
-                alt="Action Figure: Denji Chaisaw do anime Chaisaw Man"
-              />
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="/images/dom_flamingo.jpg"
-                alt="Action Figure: Dom Flamingo do anime One Piece"
-              />
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="/images/athena.jpg"
-                alt="Action Figure: Deusa Atena do anime Cavaleiros do Zodiaco"
-              />
-            </swiper-slide>
-            <swiper-slide>
-              <img
-                src="/images/Garou.jpg"
-                alt="Action Figure: Garou do anime One Punch Man"
-              />
-            </swiper-slide>
-          </swiper-container>
+      <div id="container-content">
+        <picture>
+          <img
+            id="container_image_item"
+            src="../images/svgContato.svg"
+            alt="imagem de Action Figure dos heróis da marvel"
+          />
+        </picture>
 
-          <div id="content">
-            <h3>Aquele Action Figure que você que esta aqui!</h3>
-            <p>
-              Dê uma olhada em nossa
-              <a href="/pages/galeria.html">incrível galeria</a> de figures
-              action e veja os diversos modelos exclusivos que temos à sua
-              disposição. Desde heróis lendários até vilões temíveis, temos tudo
-              o que você precisa para completar sua coleção.
-            </p>
-            <p>
-              Não perca mais tempo e
-              <a href="/pages/contato.html">entre em contato conosco</a> para
-              realizar seu pedido. Nossa equipe está pronta para atendê-lo com
-              excelência e garantir que você receba sua figura action em
-              perfeitas condições e dentro do prazo estabelecido. Aproveite
-              nossa promoção especial e adquira agora mesmo sua figura action
-              dos sonhos!
-            </p>
+        <form id="contact" method="get" action="/pages/mensagem.html">
+          <div class="form-group">
+            <div class="input-group">
+              <label for="name">Nome:</label>
+              <input required type="text" name="name" id="name" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input required type="email" name="email" id="email" />
+            </div>
           </div>
-        </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <label for="message">Mensagem:</label>
+              <textarea
+                required
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+
+          <div id="button-container">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
       </div>
     </section>
   </body>
