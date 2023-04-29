@@ -82,13 +82,13 @@
     <section id="container">
       <div id="title-container">
         <figure>
-          <img src="/images/logo.webp" alt="" />
+          <img src="/images/logo.webp" alt="logo" />
         </figure>
         <h1>Universo Figure Action - Galeria</h1>
       </div>
 
       <swiper-container
-        class="mySwiper"
+        class="swiper-container"
         pagination="true"
         autoplay-delay="3000"
         autoplay-disable-on-interaction="false"
@@ -102,97 +102,97 @@
         coverflow-effect-modifier="1"
         coverflow-effect-slide-shadows="true"
       >
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/L_Kira.jpg"
             alt="Action Figure: Light Yagami & L do anime Death Note"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/aldebaran.jpg"
             alt="Action Figure: Aldebaran de Touro do anime Cavaleiros do Zodiaco"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/chain_swan_man.jpg"
             alt="Action Figure: Denji Chaisaw do anime Chaisaw Man"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/dom_flamingo.jpg"
             alt="Action Figure: Dom Flamingo do anime One Piece"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/athena.jpg"
             alt="Action Figure: Deusa Atena do anime Cavaleiros do Zodiaco"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/Garou.jpg"
             alt="Action Figure: Garou do anime One Punch Man"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/gohan.jpg"
             alt="Action Figure: Gohan do anime Dragon Ball"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/guts.jpg"
             alt="Action Figure: Guts do manga Berserk"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/goku.jpg"
             alt="Action Figure: Goku do anime Dragon Ball"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/genos.png"
             alt="Action Figure: Genos do anime One Punch Man"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/naruto.jpg"
             alt="Action Figure: Naruto Uzumaki do anime Naruto"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/saitama2.jpg"
             alt="Action Figure: Saitama com sacola de compra do anime One Punch Man"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/seya.jpg"
             alt="Action Figure: Seya de Pegasus do anime Cavaleiros do Zodiaco"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/zoro.jpeg"
             alt="Action Figure: Zoro do anime One Piece"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/saytama.jpg"
             alt="Action Figure: Saitama do anime One Punch Man"
           />
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <img
             src="/images/shaka.png"
             alt="Action Figure: Shaka de Virgem do anime Cavaleiros do Zodiaco"
@@ -202,15 +202,15 @@
 
       <table id="table">
         <thead>
-          <tr>
+          <tr class="table-row-head">
             <th>Imagem</th>
             <th>Anime</th>
             <th>Personagem</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/L_Kira.jpg"
@@ -218,12 +218,14 @@
                 />
               </div>
             </td>
-            <td>Death Note</td>
-            <td>Light Yagami & L</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Death Note</td>
+            <td class="table-data">Light Yagami & L</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/aldebaran.jpg"
@@ -231,12 +233,14 @@
                 />
               </div>
             </td>
-            <td>Cavaleiros do Zodiaco</td>
-            <td>Aldebaran de Touro</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Cavaleiros do Zodiaco</td>
+            <td class="table-data">Aldebaran de Touro</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/chain_swan_man.jpg"
@@ -244,12 +248,14 @@
                 />
               </div>
             </td>
-            <td>Chain Swan Man</td>
-            <td>Denji Chaisaw</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Chain Swan Man</td>
+            <td class="table-data">Denji Chaisaw</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/saytama.jpg"
@@ -257,12 +263,14 @@
                 />
               </div>
             </td>
-            <td>One Punch Man</td>
-            <td>Saitama</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Punch Man</td>
+            <td class="table-data">Saitama</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/guts.jpg"
@@ -270,12 +278,14 @@
                 />
               </div>
             </td>
-            <td>Berserk</td>
-            <td>Guts</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Berserk</td>
+            <td class="table-data">Guts</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/dom_flamingo.jpg"
@@ -283,12 +293,14 @@
                 />
               </div>
             </td>
-            <td>One Piece</td>
-            <td>Dom Flamingo</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Piece</td>
+            <td class="table-data">Dom Flamingo</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/genos.png"
@@ -296,12 +308,14 @@
                 />
               </div>
             </td>
-            <td>One Punch Man</td>
-            <td>Genos</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Punch Man</td>
+            <td class="table-data">Genos</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/shaka.png"
@@ -309,12 +323,14 @@
                 />
               </div>
             </td>
-            <td>Cavaleiros do Zodiaco</td>
-            <td>Shaka de Virgem</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Cavaleiros do Zodiaco</td>
+            <td class="table-data">Shaka de Virgem</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/Garou.jpg"
@@ -322,12 +338,14 @@
                 />
               </div>
             </td>
-            <td>One Punch Man</td>
-            <td>Garou</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Punch Man</td>
+            <td class="table-data">Garou</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/athena.jpg"
@@ -335,12 +353,14 @@
                 />
               </div>
             </td>
-            <td>Cavaleiros do Zodiaco</td>
-            <td>Deusa Atena</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Cavaleiros do Zodiaco</td>
+            <td class="table-data">Deusa Atena</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/gohan.jpg"
@@ -348,12 +368,14 @@
                 />
               </div>
             </td>
-            <td>Dragon Ball</td>
-            <td>Gohan</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Dragon Ball</td>
+            <td class="table-data">Gohan</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/naruto.jpg"
@@ -361,12 +383,14 @@
                 />
               </div>
             </td>
-            <td>Naruto</td>
-            <td>Naruto Uzumaki</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Naruto</td>
+            <td class="table-data">Naruto Uzumaki</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/saitama2.jpg"
@@ -374,12 +398,14 @@
                 />
               </div>
             </td>
-            <td>One Punch Man</td>
-            <td>Saitama com sacola de compra</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Punch Man</td>
+            <td class="table-data">Saitama com sacola de compra</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/zoro.jpeg"
@@ -387,12 +413,14 @@
                 />
               </div>
             </td>
-            <td>One Piece</td>
-            <td>Zoro</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">One Piece</td>
+            <td class="table-data">Zoro</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/seya.jpg"
@@ -400,12 +428,14 @@
                 />
               </div>
             </td>
-            <td>Cavaleiros do Zodiaco</td>
-            <td>Seya de Pegasus</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Cavaleiros do Zodiaco</td>
+            <td class="table-data">Seya de Pegasus</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="table-row">
+            <td class="table-data">
               <div>
                 <img
                   src="/images/goku.jpg"
@@ -413,9 +443,11 @@
                 />
               </div>
             </td>
-            <td>Dragon Ball</td>
-            <td>Goku</td>
-            <td><a href="/pages/contato.html">Contato</a></td>
+            <td class="table-data">Dragon Ball</td>
+            <td class="table-data">Goku</td>
+            <td class="table-data">
+              <a href="/pages/contato.html">Contato</a>
+            </td>
           </tr>
         </tbody>
       </table>

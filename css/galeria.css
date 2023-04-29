@@ -1,10 +1,10 @@
-wiper-container {
+.swiper-container {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-swiper-slide {
+.swiper-slide {
   background-position: center;
   background-size: cover;
   width: 150px;
@@ -12,7 +12,7 @@ swiper-slide {
   margin-bottom: 50px;
 }
 
-swiper-slide > img {
+.swiper-slide > img {
   object-fit: fill;
   height: 100%;
   width: 100%;
@@ -28,23 +28,23 @@ table {
   border-radius: 4px;
 }
 
-tr,
-td,
-th {
+.table-row,
+.table-data,
+.table-row-head {
   border: 1px solid #7243c2;
   border-radius: 4px;
   color: #ddd;
 }
 
-td {
+.table-data {
   text-align: center;
 }
 
-td:first-child {
+.table-data:first-child {
   background-color: #cacaca;
 }
 
-td:nth-child(1n + 2) {
+.table-data:nth-child(1n + 2) {
   padding: 2px;
   font-size: 1em;
 }
@@ -62,7 +62,7 @@ tr > div > img {
 }
 
 @media screen and (min-width: 768px) {
-  swiper-slide {
+  .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 200px;
@@ -76,11 +76,11 @@ tr > div > img {
   th {
     padding: 5px;
   }
-  td {
+  .table-data {
     padding: 0;
   }
 
-  td:first-child {
+  .table-data:first-child {
     width: 120px;
     height: 120px;
   }
