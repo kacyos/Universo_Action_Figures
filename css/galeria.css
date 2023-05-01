@@ -55,7 +55,12 @@ div {
   border-radius: 4px;
 }
 
-tr > div > img {
+.image-container {
+  height: 150px;
+  width: 150px;
+}
+
+.image-container > img {
   object-fit: fill;
   height: 100%;
   width: 100%;
@@ -91,7 +96,7 @@ tr > div > img {
     border-radius: 4px;
   }
 
-  div > img {
+  .image-container > img {
     object-fit: fill;
     height: 100%;
     width: 100%;
