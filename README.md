@@ -2,11 +2,12 @@
   <div align="center">
     <h2 align="center"> Universo Action Figure </h2>
     <img src="./screen.gif" style="width: 500px" />
+    <p>
     <a href="https://universo-action-figures.vercel.app/">Link do site</a>
+    </p>
     <h1>🚀Academia .Net Atos UFN🚀</h1>
   </div>
-  <h2 align="center">🚀 Desafio HTML/CSS🧑‍🎓</h2>
-  
+  <h2 align="center">🚀 Desafio HTML/CSS🧑‍🎓</h2>  
   <h5>
     Desenvolva um site para uma empresa, com todas informações da empresa. A
     página deve possuir, no mínimo, os seguintes requisitos (ou reutilize uma já
